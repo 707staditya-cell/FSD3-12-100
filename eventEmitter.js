@@ -1,3 +1,5 @@
+import{EventEmitter} from "node:events";
+
 const login = (name) => {
     console.log(`${name} logged in`);
 };
@@ -12,7 +14,21 @@ const checkout =(name) => {
 console.log(`${name} logged out`);
 };
 
-login("Aditya Singh");
-start();
-working("Aditya Singh")
-checkout("Aditya Singh")
+//login("Aditya Singh");
+//start();
+//working("Aditya Singh")
+//checkout("Aditya Singh")
+
+const task = new EventEmitter();
+task.once("greet" , start);
+task.on("greet" , login);
+task.on("greet" , working);
+task.on("greet" , checkout);
+task.once("exit" , () => {
+    console.log("System shutting down");
+});
+
+task.emit("greet", "Aditya Singh");
+task.emit("greet", "Akshat Gupta");
+task.emit("greet", "Aditya Kasaudhan");
+task.emit("exit");
