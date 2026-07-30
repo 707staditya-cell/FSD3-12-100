@@ -9,4 +9,4 @@ form.on("submit", (uname,password) =>{
     console.log(`user password: ${password}`);
 });
 
-form.emit("submit", "adityasingh.com", "1234");
+form.emit("submit", "adityasingh.com🎶", "1234");
