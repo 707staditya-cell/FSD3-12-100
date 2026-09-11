@@ -1,15 +1,17 @@
 {
-  "name": "lab4",
+  "name": "lab-4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js Lab 4",
+  "type": "module",
   "main": "prg7.js",
   "scripts": {
+    "start": "node prg7.js",
+    "dev": "nodemon prg7.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "nodemon": "^3.1.14"
   }
