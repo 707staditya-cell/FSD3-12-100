@@ -18,6 +18,7 @@ const server = http.createServer((req, res) => {
     res.end("<h1>Contact Us</h1>");
   } else {
     res.statusCode = 404;
+    
     res.end(`
             <h1> Page not found</h1>
             <a href="/">Home</a>
