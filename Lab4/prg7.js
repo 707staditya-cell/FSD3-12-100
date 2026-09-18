@@ -22,3 +22,21 @@ const server = http.createServer((req, res) => {
 server.listen(8888, () => {
   console.log("Server prg7 running ...");
 });
+
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prg7.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon prg7.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
