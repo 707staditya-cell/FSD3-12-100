@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Sneakers</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ffcc00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* Hero */
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    background:linear-gradient(135deg,#111,#222);
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#ffcc00;
+}
+
+.hero-text p{
+    color:#ccc;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffcc00;
+    color:#111;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero img{
+    width:500px;
+    max-width:100%;
+}
+
+/* Products */
+.products{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.products h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.price{
+    color:#ffcc00;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+/* Banner */
+.banner{
+    padding:80px 8%;
+    text-align:center;
+    background:#ffcc00;
+    color:#111;
+}
+
+.banner h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ELITE.</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Collection</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Premium <span>Men's Sneakers</span></h1>
+        <p>
+            Elevate your style with luxury sneakers designed
+            for comfort, performance, and modern streetwear fashion.
+        </p>
+
+        <a href="#products" class="btn">Explore Collection</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="Sneaker">
+</section>
+
+<section class="products" id="products">
+    <h2>Featured Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800">
+            <h3>Nike Air Max</h3>
+            <div class="price">$199</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800">
+            <h3>Jordan Retro</h3>
+            <div class="price">$249</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800">
+            <h3>Adidas Ultraboost</h3>
+            <div class="price">$219</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="banner">
+    <h2>New Arrivals 2026</h2>
+    <p>Exclusive Premium Sneakers For Modern Men</p>
+</section>
+
+<footer>
+    <p>© 2026 ELITE Sneakers. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
