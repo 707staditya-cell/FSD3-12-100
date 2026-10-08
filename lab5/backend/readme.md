@@ -41,3 +41,6 @@ Fast, unopinionated, minimalist web framework for Node.js
     //this line must be last line
     app.listen(4444, ()=>console.log("prg1 is runnit at 4444"));
     ```
+
+    # Static Import
+    
